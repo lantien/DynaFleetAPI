@@ -36,8 +36,8 @@ module.exports = function(client) {
       });
     }
 
-    var query = loginModel.loginBody(req.body);
-
+    var query = loginModel.logoutBody(req.headers);
+    
     myClient.logout(query,
       (err, result) => {
           callbackRequest(err, result, res);
