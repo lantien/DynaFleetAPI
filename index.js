@@ -47,8 +47,7 @@ app.listen(8080, () => {
   .then((client) => {
 
     // REQUIRE ALL ROUTE
-    require('./app/routes/login.route.js') (app, client);
-    require('./app/routes/fleet.route.js') (app, client);
+      require('./app/routes/route.js') (app, client);
     ///////////////////////////////////////////////////
 
     console.log('WSDL loaded successfully');
